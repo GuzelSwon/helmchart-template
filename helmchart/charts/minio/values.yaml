@@ -1,0 +1,9 @@
+# Default values for minio.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+appName: minio
+
+source:
+    repoURL: https://github.com/minio/minio
+    path: helm/minio
