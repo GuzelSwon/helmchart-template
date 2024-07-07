@@ -7,3 +7,6 @@ appName: postgresql
 source:
     repoURL: https://github.com/bitnami/charts
     path: bitnami/postgresql
+    helm:
+      parametersEnabled: false
+      parameters: {}
