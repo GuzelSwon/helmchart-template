@@ -7,3 +7,5 @@ appName: minio
 source:
     repoURL: https://github.com/minio/minio
     path: helm/minio
+    parametersEnabled: false
+    parameters: {}

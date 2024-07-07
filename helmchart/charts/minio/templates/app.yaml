@@ -14,3 +14,9 @@ spec:
     repoURL: {{ .Values.source.repoURL }}
     targetRevision: HEAD
     path: {{ .Values.source.path }}
+    helm:
+        valueFiles:
+        - values.yaml
+        {{- if .Values.source.helm.parametersEnabled }}
+        parameters: {{ .Values.source.helm.parameters }}
+        {{- end }}
